@@ -1,6 +1,6 @@
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button} from "@nextui-org/react";
 import Link from 'next/link'
-import {LuShoppingCart} from 'react-icons/lu'
+import CartWidget from "./CartWidget";
 
 const NavbarMenu = () => {
   return (
@@ -28,7 +28,7 @@ const NavbarMenu = () => {
       <NavbarContent justify="end">
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
-            <LuShoppingCart color="black" size="1.5rem" />
+            <CartWidget />
           </Button>
         </NavbarItem>
       </NavbarContent>
