@@ -1,40 +1,39 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button} from "@nextui-org/react";
 import Link from 'next/link'
 import CartWidget from "./CartWidget";
 
-const NavbarMenu = () => {
+const Navbar = () => {
   return (
-    <Navbar className="text-black bg-white border-2 border-b-black">
-      <NavbarBrand>
+    <div className="text-black bg-white border border-b-gray-300 flex gap-2 justify-around py-6">
+      <div>
         <p className="font-bold">E-COMMERCE</p>
-      </NavbarBrand>
-      <NavbarContent className=" sm:flex gap-4" justify="center">
-        <NavbarItem >
+      </div>
+      <div className=" sm:flex gap-4" justify="center">
+        <div >
           <Link color="foreground" href="#">
             Promociones
           </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
+        </div>
+        <div isActive>
           <Link href="#" aria-current="page">
             Temporada
           </Link>
-        </NavbarItem>
-        <NavbarItem>
+        </div>
+        <div>
           <Link color="primary" href="#">
             Mas vendido
           </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+        </div>
+      </div>
+      <div justify="end">
+        <div>
+          <button as={Link} color="primary" href="#" variant="flat">
             <CartWidget />
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
-    </Navbar>
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default NavbarMenu
+export default Navbar
 
