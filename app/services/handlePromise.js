@@ -6,6 +6,7 @@ const products = [
           "Donec sollicitudin molestie malesuada. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia.",
         price: 15,
         pictureUrl: "https://images2.imgbox.com/4b/ef/Tyk9tBA5_o.jpeg"
+        // pictureUrl: "/image1.jpeg"
       },
     
       {
@@ -15,6 +16,7 @@ const products = [
           "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
         price: 30,
         pictureUrl: 'https://images2.imgbox.com/10/a5/M3Se7exo_o.jpeg',
+        // pictureUrl: '/image2.jpeg'
       },
     
       {

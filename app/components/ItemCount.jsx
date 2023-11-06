@@ -1,25 +1,42 @@
-"use client"
+"use client";
 
-import { Button } from "@nextui-org/react";
 import React, { useState } from "react";
 
-const ItemCount = ({stock, initial}) => {
-    const [count, setCount] = useState(initial);
+const ItemCount = ({ stock, initial }) => {
+  const [count, setCount] = useState(initial);
 
-    const onAdd = () => {
-        count < stock && setCount(count + 1);
-    }
+  const onAdd = () => {
+    count < stock && setCount(count + 1);
+  };
 
-    const onRemove = () => {
-        count > 0 && setCount(count-1);
-    }
+  const onRemove = () => {
+    count > 0 && setCount(count - 1);
+  };
 
   return (
-    <div className="flex gap-3 py-4">
-      <Button onClick={onRemove} color="primary"> - </Button>
-      <p className="text-5xl font-bold text-black p-10">{count}</p>
-      <Button onClick={onAdd} color="primary"> + </Button>
-    </div>
+    <>
+      <div className="flex gap-4 p-0">
+        <div className="flex gap-4 border border-gray-300 px-6 my-0">
+          <button onClick={onRemove} color="primary" className="text-gray-500 text-3xl">
+            -
+          </button>
+          
+          <p className="text-4xl text-black mt-7 px-2">{count}</p>
+          
+          <button onClick={onAdd} className="text-gray-500 text-3xl">
+          +
+          </button>
+        </div>
+
+        <div className="py-4">
+          <button className="px-10 border-2 border-black bg-black text-white p-4">Agregar al carrito</button>
+        </div>
+
+        <div className="py-4">
+          <button className="px-10 border-2 border-black bg-black text-white p-4">Comprar</button>
+        </div>
+      </div>
+    </>
   );
 };
 

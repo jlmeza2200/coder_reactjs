@@ -5,9 +5,11 @@ const Navbar = () => {
   return (
     <div className="text-black bg-white border border-b-gray-300 flex gap-2 justify-around py-6">
       <div>
-        <p className="font-bold">E-COMMERCE</p>
+        <Link href="/">
+        <p className="font-bold text-left md:text-right">E-COMMERCE</p>
+        </Link>
       </div>
-      <div className=" sm:flex gap-4" justify="center">
+      <div className="hidden sm:flex gap-4" justify="center">
         <div >
           <Link color="foreground" href="#">
             Promociones
@@ -24,7 +26,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div justify="end">
+      <div className='hidden md:flex justify-end'>
         <div>
           <button as={Link} color="primary" href="#" variant="flat">
             <CartWidget />

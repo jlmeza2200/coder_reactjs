@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ItemListContainer from "./components/ItemListContainer";
 import Navbar from "./components/Navbar";

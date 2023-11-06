@@ -6,7 +6,7 @@ import ItemList from './ItemList'
 import getProducts from '../services/handlePromise'
 
 const ItemListContainer = () => {
-    const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     getProducts
