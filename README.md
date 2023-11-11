@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Clase 8 - Primera entrega de proyecto final.
 
-## Getting Started
+>> Consigna:
+Configura en App.js el routing usando un BrowserRouter de tu aplicación con react router dom
 
-First, run the development server:
+Aspectos a incluir en el entregable:
+[X]-Rutas a configurar
+	-‘/’ navega a <ItemListContainer
+	-‘/category/:id’ <ItemListContainer />
+	-‘/item/:id’ navega a <ItemDetailContainer
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[X]- Links a configurar
+	-Clickear en el brand debe navegar a "/"
+	-Clickear un Item.js debe navegar a /item/:id
+	-Clickear en una categoría del navbar debe navegar a /category/:categoryId
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[X]-Para finalizar integra los parámetros de tus async mocks para reaccionar a :itemId y :categoryId
+¡utilizando efectos y los hooks de parámetros que vimos en clase! Si te encuentras en una categoría
+deberías poder detectar la navegación a otra categoría y volver a cargar los productos que
+correspondan a dicha categoría.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+>> Además:
+Deberás corroborar que tu proyecto cuente con:
+[X] 1. Navbar con cart
+[X] 2. Catálogo
+[X] 3. Detalle de producto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Incluir:
+[X] - Archivo readme.md
 
-## Learn More
+A tener en cuenta:
+en la Rúbrica de Evaluación (ubicada en la carpeta de la camada) encontrarás un mayor detalle respecto a qué se tendrá en cuenta para la corrección. 
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Importante:
+La entrega intermedia no supone la realización de un archivo aparte o extra; marca que en este momento se hará una revisión más integral.

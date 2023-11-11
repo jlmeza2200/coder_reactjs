@@ -5,7 +5,7 @@ import ItemCount from "@/app/components/ItemCount";
 
 import getProducts from "@/app/services/handlePromise";
 
-const ItemDetail = ({ params }) => {
+const Promociones = ({ params }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -47,4 +47,4 @@ const ItemDetail = ({ params }) => {
   );
 };
 
-export default ItemDetail;
+export default Promociones;

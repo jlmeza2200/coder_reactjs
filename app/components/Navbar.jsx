@@ -6,25 +6,28 @@ const Navbar = () => {
     <div className="text-black bg-white border border-b-gray-300 flex gap-2 justify-around py-6">
       <div>
         <Link href="/">
-        <p className="font-bold text-left md:text-right">E-COMMERCE</p>
+        <p className="font-bold text-left md:text-right text-red-400">E-COMMERCE</p>
         </Link>
       </div>
       <div className="hidden sm:flex gap-4" justify="center">
         <div >
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/promociones/category">
             Promociones
           </Link>
         </div>
-        <div isActive>
-          <Link href="#" aria-current="page">
-            Temporada
-          </Link>
-        </div>
+        
         <div>
-          <Link color="primary" href="#">
+          <Link color="primary" href="/mas-vendido/category">
             Mas vendido
           </Link>
         </div>
+
+        <div isActive>
+          <Link href="/temporada/category" aria-current="page">
+            Temporada
+          </Link>
+        </div>
+
       </div>
       <div className='hidden md:flex justify-end'>
         <div>

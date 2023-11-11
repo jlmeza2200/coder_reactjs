@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mx-70 py-28 bg-stone-50 text-black" sx={{"backgroundColor":'#f5f5f5'}} >
-      <div className="text-center md:text-left lg:text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr,1fr,1fr,1fr] px-10 md:px-40 lg:px-40">
+    <div className="text-black bg-stone-100 mt-48">
+      <div className="py-28 text-center md:text-left lg:text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr,1fr,1fr,1fr] px-10 md:px-40 lg:px-40">
         <div>
-          <h4 className="font-bold mb-30 text-secondary-500">ECOMMER</h4>
+          <h4 className="font-bold mb-30 text-secondary-500 text-red-400">E-COMMERCE</h4>
           <div className="pt-7 pb-7 sm:w-full md:w-4/5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

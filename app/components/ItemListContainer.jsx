@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from 'react'
-import ItemCount from './ItemCount'
-import ItemList from './ItemList'
-import getProducts from '../services/handlePromise'
+import React, { useState, useEffect } from "react";
+import ItemList from "./ItemList";
+import getProducts from "../services/handlePromise";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
@@ -16,13 +15,7 @@ const ItemListContainer = () => {
       .catch((err) => alert("Hay un problema...", err));
   }, []);
 
-  return (
-    <div className='bg-white text-black py-20'>
-        <ItemList products={products} />
-        {/* <ItemCount stock={5} initial={1} /> */}
-    </div>
+  return <ItemList products={products} />;
+};
 
-  )
-}
-
-export default ItemListContainer
+export default ItemListContainer;

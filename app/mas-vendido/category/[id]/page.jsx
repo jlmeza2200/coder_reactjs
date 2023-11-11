@@ -5,7 +5,7 @@ import ItemCount from "@/app/components/ItemCount";
 
 import getProducts from "@/app/services/handlePromise";
 
-const ItemDetail = ({ params }) => {
+const MasVendido = ({ params }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const ItemDetail = ({ params }) => {
             />
           </div>
 
-          <div className="pt-0 md:pt-16 text-center md:text-left">
+          <div className="pt-0 md:pt-16 text-left">
             <h2 className="uppercase">{productSelected?.title} </h2>
             <span className="font-semibold">${productSelected?.price}</span>
             <p className="py-4 font-thin text-gray-700">
@@ -47,4 +47,4 @@ const ItemDetail = ({ params }) => {
   );
 };
 
-export default ItemDetail;
+export default MasVendido;

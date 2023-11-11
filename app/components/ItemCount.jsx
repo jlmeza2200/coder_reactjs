@@ -10,30 +10,31 @@ const ItemCount = ({ stock, initial }) => {
   };
 
   const onRemove = () => {
-    count > 0 && setCount(count - 1);
+    count > 1 && setCount(count - 1);
   };
 
   return (
     <>
-      <div className="flex gap-4 p-0">
-        <div className="flex gap-4 border border-gray-300 px-6 my-0">
-          <button onClick={onRemove} color="primary" className="text-gray-500 text-3xl">
-            -
+      <div className="w-custom-md flex items-center gap-4">
+        {/* Contador */}
+        <div className="w-24 flex gap-3 items-center border border-gray-300 text-gray-500 py-1 px-6">
+          <button onClick={onRemove}>
+            <span className="text-2xl font-bold -mt-10">-</span>
           </button>
-          
-          <p className="text-4xl text-black mt-7 px-2">{count}</p>
-          
-          <button onClick={onAdd} className="text-gray-500 text-3xl">
-          +
+          <span className="text-xl font-medium">{count}</span>
+          <button onClick={onAdd}>
+            <span className="text-2xl font-bold">+</span>
           </button>
         </div>
 
-        <div className="py-4">
-          <button className="px-10 border-2 border-black bg-black text-white p-4">Agregar al carrito</button>
-        </div>
-
-        <div className="py-4">
-          <button className="px-10 border-2 border-black bg-black text-white p-4">Comprar</button>
+        {/* Btn Agregar al carrito y Comprar */}
+        <div className="flex gap-4" paddingLeft="25px">
+          <button className="px-10 py-2 border-2 border-black bg-black text-white">
+            Agregar al carrito
+          </button>
+          <button className="px-10 py-2  border-2 border-black bg-black text-white">
+            Comprar
+          </button>
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import ItemDetail from "../itemDetail/[id]/page";
+import ItemDetail from "../item/[id]/page";
 
 
 const ItemDetailContainer = () => {
