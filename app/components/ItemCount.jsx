@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const ItemCount = ({ stock, initial }) => {
@@ -13,6 +14,11 @@ const ItemCount = ({ stock, initial }) => {
     count > 1 && setCount(count - 1);
   };
 
+  const handleAddProduct = () => {
+    setCount(0)
+    console.log(count);
+  }
+  
   return (
     <>
       <div className="w-custom-md flex items-center gap-4">
@@ -29,12 +35,14 @@ const ItemCount = ({ stock, initial }) => {
 
         {/* Btn Agregar al carrito y Comprar */}
         <div className="flex gap-4" paddingLeft="25px">
-          <button className="px-10 py-2 border-2 border-black bg-black text-white">
+          <button onClick={handleAddProduct} className="px-10 py-2 border-2 border-black bg-black text-white">
             Agregar al carrito
           </button>
-          <button className="px-10 py-2  border-2 border-black bg-black text-white">
-            Comprar
-          </button>
+          <Link href="/kart">
+            <button className="px-10 py-2  border-2 border-black bg-black text-white">
+              Comprar
+            </button>
+          </Link>
         </div>
       </div>
     </>
